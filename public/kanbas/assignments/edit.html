@@ -49,13 +49,13 @@
                         </select>
                         <hr/>
                         <h2>Assignment Name</h2>
-                        <form>
+                        <form action="index.html">
                             <input id="assignment" readonly placeholder="A1 - Free Write" value="A1 - Free Write"><br/>
                             <br/>
                             <textarea id="description">This is the assignment description.</textarea><br/>
                             <br/>
-                            Points<br/>
-                            <input id="grade" placeholder="100" value="100"><br/>
+                            <label for="grade">Points</label><br/>
+                            <input id="grade" max="100" min="0" type="number" placeholder="100" value="100"><br/>
                             <br/>
                             Assignment Group<br/>
                             <select>
@@ -115,8 +115,8 @@
                             Until<br/>
                             <input id="until" type="date" name="until-date" value="2021-01-01"><br/>
                             <br/>
-                            <button><a href="index.html">Cancel</a></button>
-                            <button><a href="index.html">Save</a></button>
+                            <button>Cancel</button>
+                            <button>Save</button>
                         </form>
                     </td>
                 </tr>
