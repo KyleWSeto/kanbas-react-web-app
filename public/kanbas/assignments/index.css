@@ -1,0 +1,15 @@
+.wd-width-assignment {
+    width: 40%;
+}
+
+.wd-links-assignments {
+    color: darkslategray;
+    text-decoration: none;
+
+}
+
+.list-group .list-group-item.wd-border-module {
+    border-left: 3px;
+    border-left-style: ridge;
+    border-left-color: green;
+}

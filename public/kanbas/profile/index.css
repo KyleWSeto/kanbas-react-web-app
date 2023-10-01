@@ -1,0 +1,10 @@
+.btn.wd-color-edit-button {
+    color: darkgray;
+    background-color: lightgray;
+    border-color: lightgray;
+}
+.btn.wd-color-save-button {
+    color: lightgray;
+    background-color: red;
+    border-color: red;
+}

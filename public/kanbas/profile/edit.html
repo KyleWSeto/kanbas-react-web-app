@@ -3,94 +3,184 @@
     <head>
         <meta charset="UTF-8">
         <title>Kanbas Profile Page</title>
+        <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="../index.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
     </head>
     <body>
-        <table>
-            <tbody>
-                <tr valign="top">
-                    <td>
-                        <ul>
-                            <li><a href="../account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="../courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="#">Notifications</a></li>
-                            <li><a href="index.html">Profile</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">ePortfolios</a></li>
-                            <li><a href="#">Shared Content</a></li>
-                            <li><a href="#">The Hub</a></li>
-                            <li><a href="#">Qwickly Course Tools</a></li>
-                            <li><a href="#">Global Announcements</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <h2>Kyle Seto</h2>
-                        <form>
-                            <label for="name">Name:*</label>
-                            <input id="name" title="Name" readonly placeholder="Kyle Seto" value="Kyle Seto">
-                            <label for="pronoun">Pronouns:</label>
-                            <select>
-                                <option value="NONE" selected>None</option>
-                            </select><br/>
-                            <br/>
-                            <label for="title">Title:</label>
-                            <input id="title" title="Title"></input><br/>
-                            <h4>Contact</h4>
-                            Email: seto.ky@northeastern.edu
-                            <h4>Biography</h4>
-                            Student, Computer Science Major, Software Concentration<br/>
-                            <textarea id="description">Student, Computer Science Major, Software Concentration</textarea><br/>
-                            <br/>
-                            <h4>Links</h4>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/kylewseto/">LinkedIn</a> Links to an external website</li>
-                            </ul>
-                            <table>
-                                <thead>
-                                    <tr valign="top">
-                                        <th>Title</th>
-                                        <th></th>
-                                        <th>URL</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr valign="top">
-                                        <td>
-                                            <input id="title" title="Title" readonly placeholder="LinkedIn" value="LinkedIn">
-                                        </td>
-                                        <td>
-                                            ->
-                                        </td>
-                                        <td>
-                                            <input id="url" title="URL" readonly placeholder="https://www.linkedin.com/in/kylewseto/" value="https://www.linkedin.com/in/kylewseto/">
-                                        </td>
-                                        <td>
-                                            <a href="#">Remove</a><br/>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <button>Add another link</button><br/>
-                            <button>Cancel</button>
-                            <button><a href="index.html">Save Profile</a></button><br/>
-                            <button>Edit Profile</button>
-                            <button><a href="index.html">Cancel Editing</a></button>
-                        </form>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="d-flex flex-row mb-3">
+            <ul class="list-group wd-navigation">
+                <li class="list-group-items active">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-user fa-2x wd-color-profile-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="../account.html" class="wd-links-navigation">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-table fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="../dashboard.html" class="wd-links-navigation">Dashboard</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-book fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="../courses.html" class="wd-links-navigation">Courses</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-calendar fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Calendar</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-inbox fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Inbox</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-clock fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">History</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-phone fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Studio</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-share fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Commons</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-comment fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Help</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group wd-account">
+                <li class="list-group-items"><a href="#" class="wd-links-account">Notifications</a></li>
+                <li class="list-group-items active"><a href="./profile/index.html" class="wd-links-account">Profile</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">Files</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">Settings</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">ePortfolios</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">Shared Content</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">The Hub</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">Qwickly Course Tools</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-account">Global Announcements</a></li>
+            </ul>
+            <div class="mb-2">
+                <div>
+                    <h2>Jose Annunziato's Profile</h2><br/>
+                    <hr/>
+                </div>
+                <div>
+                    <div class="d-flex flex-row mb-2">
+                        <div class="float-start">
+                            <i class="fa fa-user fa-8x wd-color-profile-icon"></i>
+                        </div>
+                        <div class="ms-auto">
+                            <a href="index.html">
+                                <btn class="btn btn-primary wd-color-edit-button">
+                                    <i class="fa fa-pen"></i>
+                                    Cancel Editing
+                                </btn>
+                            </a>
+                        </div>
+                    </div>
+                    <form>
+                        <label for="name">Name:*</label>
+                        <input id="name" class="form-control" title="Name" readonly placeholder="Jose Annunziato" value="Jose Annunziato">
+                        <label for="pronoun">Pronouns:</label>
+                        <select class="form-select">
+                            <option value="NONE" selected>None</option>
+                        </select>
+                        <label for="title">Title:</label>
+                        <input id="title" class="form-control" title="Title"></input><br/>
+                        <h3>Contact</h3>
+                        No registered services, you can add<br/>
+                        some on the <a href="#" class="wd-links-account">settings</a> page.
+                        <h4>Biography</h4>
+                        <textarea id="description" class="form-control">Faculty, Software Engineer, AI, Space and renewables enthuastist.</textarea><br/>
+                        <br/>
+                        <h4>Links</h4>
+                        <table class="table">
+                            <thead>
+                                <tr valign="top" class="col">
+                                    <th>Title</th>
+                                    <th></th>
+                                    <th>URL</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr valign="top" class="col">
+                                    <td>
+                                        <input id="title" title="Title" readonly placeholder="LinkedIn" value="LinkedIn">
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-arrow-right"></i>
+                                    </td>
+                                    <td>
+                                        <input id="url" title="URL" readonly placeholder="https://www.youtube.com/@WebDevTV" value="https://www.youtube.com/@WebDevTV">
+                                    </td>
+                                    <td>
+                                        <a href="#" class="wd-links-account">X</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gap-2">
+                            <btn><a href="index.html" class="btn btn-primary wd-color-save-button float-end">Save Profile</a></btn>
+                            <btn><a href="index.html" class="btn btn-primary wd-color-edit-button float-end">Cancel</a></btn>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
