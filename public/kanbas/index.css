@@ -143,6 +143,10 @@
     color: red;
 }
 
+.wd-bg-color-navigation {
+    background-color: black;
+}
+
 .wd-color-module-icon {
     color: green;
 }
@@ -179,4 +183,9 @@
 
 .wd-name-student {
     color: red;
+}
+
+.wd-img-northeastern-logo {
+    background-color: black;
+    border: none;
 }
