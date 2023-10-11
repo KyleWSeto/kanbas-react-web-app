@@ -3,119 +3,233 @@
     <head>
         <meta charset="UTF-8">
         <title>Kanbas Grade Page</title>
+        <link href="../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
     </head>
     <body>
-        <table>
-            <tbody>
-                <tr valign="top">
-                    <td>
-                        <ul>
-                            <li><a href="account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
+        <div class="d-flex flex-row mb-3">
+            <div class="wd-bg-color-navigation">
+                <ul class="list-group wd-navigation">
+                    <li class="list-group-items">
+                        <img src="../images/northeastern_logo.png" class="img-thumbnail wd-img-northeastern-logo">
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-user fa-2x wd-color-profile-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="account.html" class="wd-links-navigation">Account</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-table fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="dashboard.html" class="wd-links-navigation">Dashboard</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items active">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-book fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="courses.html" class="wd-links-navigation">Courses</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-calendar fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="wd-links-navigation">Calendar</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-inbox fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="wd-links-navigation">Inbox</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-clock fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="wd-links-navigation">History</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-phone fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="wd-links-navigation">Studio</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-share fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="wd-links-navigation">Commons</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-items">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-comment fa-2x wd-color-navigation-icon"></i>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="wd-links-navigation">Help</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list-group wd-courses">
+                    <li class="list-group-items"><a href="home.html" class="wd-links-courses">Home</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Modules</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Piazza</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Zoom Meetings</a></li>
+                    <li class="list-group-items"><a href="./assignments/index.html" class="wd-links-courses">Assignments</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Quizzes</a></li>
+                    <li class="list-group-items active"><a href="grades.html" class="wd-links-courses">Grades</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">People</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Panopto Video</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Discussions</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Announcements</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Pages</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Files</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Rubrics</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Outcomes</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Collaborations</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Syllabus</a></li>
+                    <li class="list-group-items"><a href="#" class="wd-links-courses">Settings</a></li>
+                </ul>
+            </div>
+            <div>
+                <nav style="--bs-breadcrumb-divider: '>';" class="my-2" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="wd-links-courses">Writing Fall 2023 Sec01</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                    </ol>
+                </nav>
+                <hr/>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end my-2">
+                    <button class="btn btn-secondary">
+                        <i class="fa fa-link"></i>
+                        Import
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-image"></i>
+                            Export
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Export</a></li>
                         </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="#">Modules</a></li>
-                            <li><a href="#">Piazza</a></li>
-                            <li><a href="#">Zoom Meetings</a></li>
-                            <li><a href="./assignments/index.html">Assignments</a></li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="grades.html">Grades</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Panopto Video</a></li>
-                            <li><a href="#">Discussions</a></li>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Rubrics</a></li>
-                            <li><a href="#">Outcomes</a></li>
-                            <li><a href="#">Collaborations</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <select>
-                            <option value="GRADEBOOK" selected>Gradebook</option>
-                        </select>
-                        <button>Import</button>
-                        <select>
-                            <option value="EXPORT" selected>Export</option>
-                        </select>
-                        <button>Configure</button>
-                        <h2>Student Names</h2>
-                        <form>
-                            <input id="search-students" placeholder="Search Students">
-                        </form>
-                        <h2>Assignment Names</h2>
-                        <form>
-                            <input id="search-assignments" placeholder="Search Assignments">
-                        </form>
-                        <br/>
-                        <button>Apply Filters</button>
-                        <br/>
-                        <br/>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>Student Name</th>
-                                    <th>A1 Free Write<br/>Out of 100</th>
-                                    <th>A2 Literary Devices<br/>Out of 100</th>
-                                    <th>A3 Editorial Outline<br/>Out of 100</th>
-                                    <th>A4 Editorial Final Draft<br/>Out of 100</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lucy Foley</td>
-                                    <td>97</td>
-                                    <td><form>
-                                        <input id="L-F-A2" type="number" min="0" max="100" placeholder="88">
-                                    </form></td>
-                                    <td>90</td>
-                                    <td>95</td>
-                                </tr>
-                                <tr>
-                                    <td>Riley Sager</td>
-                                    <td>92</td>
-                                    <td>85</td>
-                                    <td><form>
-                                        <input id="R-FS-A3" type="number" min="0" max="100" placeholder="88">
-                                    </form></td>
-                                    <td>92</td>
-                                </tr>
-                                <tr>
-                                    <td>Samantha Downing</td>
-                                    <td><form>
-                                        <input id="S-D-A1" type="number" min="0" max="100" placeholder="88">
-                                    </form></td>
-                                    <td>75</td>
-                                    <td>82</td>
-                                    <td>88</td>
-                                </tr>
-                                <tr>
-                                    <td>Grady Hendrix</td>
-                                    <td>96</td>
-                                    <td>84</td>
-                                    <td>89</td>
-                                    <td><form>
-                                        <input id="G-H-A4" type="number" min="0" max="100" placeholder="95">
-                                    </form></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                    <button class="btn btn-secondary"><i class="fa fa-cog"></i></button>
+                </div>
+                <div class="my-2">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Student Names</h2>
+                        </div>
+                        <div class="col">
+                            <h2>Assignment Names</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <input id="search-students" class="form-control" placeholder="Search Students">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form>
+                                <input id="search-assignments" class="form-control" placeholder="Search Assignments">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary my-4">
+                    <i class="fa fa-filter fa-2x"></i>
+                    Apply Filters
+                </button>
+                <div class="table-responsive-xxl my-2">
+                    <table class="table table-striped" border="1">
+                        <thead>
+                            <tr class="text-center">
+                                <th>Student Name</th>
+                                <th>A1 Free Write<br/>Out of 100</th>
+                                <th>A2 Literary Devices<br/>Out of 100</th>
+                                <th>A3 Editorial Outline<br/>Out of 100</th>
+                                <th>A4 Editorial Final Draft<br/>Out of 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p class="wd-name-student">Lucy Foley</p></td>
+                                <td>97</td>
+                                <td><form>
+                                    <input id="L-F-A2" class="form-control" type="number" min="0" max="100" placeholder="88">
+                                </form></td>
+                                <td>90</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td><p class="wd-name-student">Riley Sager</p></td>
+                                <td>92</td>
+                                <td>85</td>
+                                <td><form>
+                                    <input id="R-FS-A3" class="form-control" type="number" min="0" max="100" placeholder="88">
+                                </form></td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td><p class="wd-name-student">Samantha Downing</p></td>
+                                <td><form>
+                                    <input id="S-D-A1" class="form-control" type="number" min="0" max="100" placeholder="88">
+                                </form></td>
+                                <td>75</td>
+                                <td>82</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td><p class="wd-name-student">Grady Hendrix</p></td>
+                                <td>96</td>
+                                <td>84</td>
+                                <td>89</td>
+                                <td><form>
+                                    <input id="G-H-A4" class="form-control" type="number" min="0" max="100" placeholder="95">
+                                </form></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

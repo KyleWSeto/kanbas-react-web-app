@@ -3,128 +3,422 @@
     <head>
         <meta charset="UTF-8">
         <title>Kanbas Assignment Page</title>
+        <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="../index.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
     </head>
     <body>
-        <table>
-            <tbody>
-                <tr valign="top">
-                    <td>
-                        <ul>
-                            <li><a href="../account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="../courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="../home.html">Home</a></li>
-                            <li><a href="#">Modules</a></li>
-                            <li><a href="#">Piazza</a></li>
-                            <li><a href="#">Zoom Meetings</a></li>
-                            <li><a href="index.html">Assignments</a></li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="../grades.html">Grades</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Panopto Video</a></li>
-                            <li><a href="#">Discussions</a></li>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Rubrics</a></li>
-                            <li><a href="#">Outcomes</a></li>
-                            <li><a href="#">Collaborations</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <form>
-                            <input id="search-for-assignments" placeholder="Search for Assignments">
-                            <button>Group</button>
-                            <button>Assignment</button>
-                            <select>
-                                <option value="EDIT" selected>Edit Assignment Dates</option>
-                            </select>
-                        </form>
-                        <h2>ASSIGNMENTS 40% of Total
-                            <select>
-                                <option value="EDIT" selected>Edit</option>
-                                <option value="SPEED">Speed Grader</option>
-                                <option value="DUPLICATE">Duplicate</option>
-                                <option value="DELETE">Delete</option>
-                                <option value="MOVE">Move to...</option>
-                                <option value="SEND">Send to...</option>
-                                <option value="COPY">Copy to...</option>
-                                <option value="SHARE">Share to Commons</option>
-                            </select>
-                        </h2>
-                        <ul>
-                            <li><a href="edit.html">A1 - Free Write<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="edit.html">A2 - Literary Devices<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="edit.html">A3 - Editorial Outline<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="edit.html">A4 - Editorial Final Draft<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="edit.html">A5 - Literary Fiction Outline<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="edit.html">A6 - Literary Fiction Final Draft<br/>Multiple Modules</a> | Not available yet</li>
-                        </ul>
-                        <h2>QUIZZES 10% of Total
-                            <select>
-                                <option value="EDIT" selected>Edit</option>
-                                <option value="SPEED">Speed Grader</option>
-                                <option value="DUPLICATE">Duplicate</option>
-                                <option value="DELETE">Delete</option>
-                                <option value="MOVE">Move to...</option>
-                                <option value="SEND">Send to...</option>
-                                <option value="COPY">Copy to...</option>
-                                <option value="SHARE">Share to Commons</option>
-                            </select>
-                        </h2>
-                        <ul>
-                            <li><a href="#">Q1 - Literary Devices<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="#">Q2 - Research Analysis<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="#">Q3 - Citations<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="#">Q4 - Prose<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="#">Q5 - Crafting a Narrative<br/>Multiple Modules</a> | Not available yet</li>
-                        </ul>
-                        <h2>EXAMS 20% of Total
-                            <select>
-                                <option value="EDIT" selected>Edit</option>
-                                <option value="SPEED">Speed Grader</option>
-                                <option value="DUPLICATE">Duplicate</option>
-                                <option value="DELETE">Delete</option>
-                                <option value="MOVE">Move to...</option>
-                                <option value="SEND">Send to...</option>
-                                <option value="COPY">Copy to...</option>
-                                <option value="SHARE">Share to Commons</option>
-                            </select>
-                        </h2>
-                        <ul>
-                            <li><a href="#">Midterm<br/>Multiple Modules</a> | Not available yet</li>
-                            <li><a href="#">Final<br/>Multiple Modules</a> | Not available yet</li>
-                        </ul>
-                        <h2>PROJECT 30% of Total
-                            <select>
-                                <option value="EDIT" selected>Edit</option>
-                                <option value="SPEED">Speed Grader</option>
-                                <option value="DUPLICATE">Duplicate</option>
-                                <option value="DELETE">Delete</option>
-                                <option value="MOVE">Move to...</option>
-                                <option value="SEND">Send to...</option>
-                                <option value="COPY">Copy to...</option>
-                                <option value="SHARE">Share to Commons</option>
-                            </select>
-                        </h2>
-                        <ul>
-                            <li><a href="#">Project<br/>Multiple Modules</a> | Not available yet</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="d-flex flex-row mb-4">
+            <ul class="list-group wd-navigation">
+                <li class="list-group-items">
+                    <img src="../../images/northeastern_logo.png" class="img-thumbnail wd-img-northeastern-logo">
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-user fa-2x wd-color-profile-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="../account.html" class="wd-links-navigation">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-table fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="../dashboard.html" class="wd-links-navigation">Dashboard</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items active">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-book fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="../courses.html" class="wd-links-navigation">Courses</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-calendar fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Calendar</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-inbox fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Inbox</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-clock fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">History</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-phone fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Studio</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-share fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Commons</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-comment fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Help</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group wd-courses">
+                <li class="list-group-items"><a href="../home.html" class="wd-links-courses">Home</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Modules</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Piazza</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Zoom Meetings</a></li>
+                <li class="list-group-items active"><a href="./assignments/index.html" class="wd-links-courses">Assignments</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Quizzes</a></li>
+                <li class="list-group-items"><a href="../grades.html" class="wd-links-courses">Grades</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">People</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Panopto Video</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Discussions</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Announcements</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Pages</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Files</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Rubrics</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Outcomes</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Collaborations</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Syllabus</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Settings</a></li>
+            </ul>
+            <div class="ms-4">
+                <nav style="--bs-breadcrumb-divider: '>';"  class="my-2" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="wd-links-courses">Writing Fall 2023 Sec01</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+                <hr/>
+                <form>
+                    <div class="d-flex flex-row mb-2">
+                        <div>
+                            <input id="search-for-assignments" class="form-control wd-width-assignment" placeholder="Search for Assignments">
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-end">
+                            <button class="btn btn-secondary">Group</button>
+                            <button class="btn btn-danger">Assignment</button>
+                            <button class="btn btn-secondary"><i class="fa fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <hr/>
+                <ul class="list-group wd-module">
+                    <li class="list-group-item list-group-item-secondary">
+                        <div class="float-start">
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                        ASSIGNMENTS
+                        <div class="float-end">
+                            40% of Total
+                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="edit.html" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                A1 - Free Write<br/>Multiple Modules</a> | Start Week 1<br/>
+                                Due: Week 3 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="edit.html" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                A2 - Literary Devices<br/>Multiple Modules</a> | Start Week 3<br/>
+                                Due: Week 5 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="edit.html" class="wd-links-assignments"> 
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                A3 - Editorial Outline<br/>Multiple Modules</a>  | Start Week 5<br/>
+                                Due: Week 7 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="edit.html" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                A4 - Editorial Final Draft<br/>Multiple Modules</a> | Start Week 7<br/>
+                                Due: Week 9 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="edit.html" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                A5 - Literary Fiction Outline<br/>Multiple Modules</a> | Start Week 9<br/>
+                                Due: Week 11 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="edit.html" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                A6 - Literary Fiction Final Draft<br/>Multiple Modules</a> | Start Week 11<br/>
+                                Due: Week 13 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class=" list-group-item list-group-item-secondary">
+                        <div class="float-start">
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                        QUIZZES 
+                        <div class="float-end">
+                            10% of Total
+                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="#" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                Q1 - Literary Devices<br/>Multiple Modules</a> | Start Week 2<br/>
+                                Due: Week 2 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="#" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                Q2 - Research Analysis<br/>Multiple Modules</a> | Start Week 4<br/>
+                                Due: Week 4 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-centermwd-border-module"><a href="#" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                Q3 - Citations<br/>Multiple Modules</a> | Start Week 6<br/>
+                                Due: Week 6 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="#" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                Q4 - Prose<br/>Multiple Modules</a> | Start Week 8<br/>
+                                Due: Week 8 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module"><a href="#" class="wd-links-assignments">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                Q5 - Crafting a Narrative<br/>Multiple Modules</a> | Start Week 10<br/>
+                                Due: Week 10 | 100pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="list-group-item list-group-item-secondary">
+                        <div class="float-start">
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                        EXAMS
+                        <div class="float-end">
+                            20% of Total
+                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center wd-border-module">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                <a href="#" class="wd-links-assignments">Midterm<br/>Multiple Modules</a>
+                                | Week 7 | 200pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center wd-border-module">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                <a href="#" class="wd-links-assignments">Final<br/>Multiple Modules</a>
+                                | Week 14 | 200pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class=" list-group-item list-group-item-secondary">
+                        <div class="float-start">
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                        PROJECT
+                        <div class="float-end">
+                            30% of Total
+                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    </h2>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center wd-border-module">
+                            <div class="float-start">
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                                <i class="fa fa-scroll"></i>
+                            </div>
+                            <div>
+                                <a href="#" class="wd-links-assignments">Project<br/>Multiple Modules</a> | Start Week 1<br/>
+                                Due: Week 14 | 300pts
+                            </div>
+                            <div class="ms-auto">
+                                <i class="fa fa-check-circle wd-color-module-icon"></i>
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

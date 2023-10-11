@@ -3,48 +3,127 @@
     <head>
         <meta charset="UTF-8">
         <title>Kanbas Courses Page</title>
+        <link href="../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
     </head>
     <body>
-        <table>
-            <tbody>
-                <tr valign="top">
-                    <td>
-                        <ul>
-                            <li><a href="account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="#">Modules</a></li>
-                            <li><a href="#">Piazza</a></li>
-                            <li><a href="#">Zoom Meetings</a></li>
-                            <li><a href="./assignments/index.html">Assignments</a></li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="grades.html">Grades</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Panopto Video</a></li>
-                            <li><a href="#">Discussions</a></li>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Rubrics</a></li>
-                            <li><a href="#">Outcomes</a></li>
-                            <li><a href="#">Collaborations</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="d-flex flex-row mb-2">
+            <ul class="list-group wd-navigation">
+                <li class="list-group-items">
+                    <img src="../images/northeastern_logo.png" class="img-thumbnail wd-img-northeastern-logo">
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-user fa-2x wd-color-profile-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="account.html" class="wd-links-navigation">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-table fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="dashboard.html" class="wd-links-navigation">Dashboard</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items active">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-book fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="courses.html" class="wd-links-navigation">Courses</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-calendar fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Calendar</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-inbox fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Inbox</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-clock fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">History</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-phone fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Studio</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-share fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Commons</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-items">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-comment fa-2x wd-color-navigation-icon"></i>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="wd-links-navigation">Help</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group wd-courses">
+                <li class="list-group-items"><a href="home.html" class="wd-links-courses">Home</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Modules</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Piazza</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Zoom Meetings</a></li>
+                <li class="list-group-items"><a href="./assignments/index.html" class="wd-links-courses">Assignments</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Quizzes</a></li>
+                <li class="list-group-items"><a href="grades.html" class="wd-links-courses">Grades</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">People</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Panopto Video</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Discussions</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Announcements</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Pages</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Files</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Rubrics</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Outcomes</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Collaborations</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Syllabus</a></li>
+                <li class="list-group-items"><a href="#" class="wd-links-courses">Settings</a></li>
+            </ul>
+        </div>
     </body>
 </html>
