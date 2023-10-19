@@ -1,0 +1,246 @@
+.wd-color-course {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-width-assignment {
+    width: 40%;
+}
+
+.wd-links-assignments {
+    color: darkslategray;
+    text-decoration: none;
+
+}
+
+.list-group .list-group-item.wd-border-module {
+    border-left: 3px;
+    border-left-style: ridge;
+    border-left-color: green;
+}
+
+.list-group.wd-navigation {
+    background-color: black;
+    width: 85px;
+    border-radius: 0rem;
+}
+
+.list-group.wd-account {
+    background-color: white;
+    width: 200px;
+}
+
+.list-group.wd-courses {
+    background-color: white;
+    width: 200px;
+}
+
+.list-group-items {
+    padding: 10px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-align: center;
+}
+
+.list-group.wd-account .list-group-items {
+    margin-left: 20px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-align: left;
+}
+
+.list-group.wd-courses .list-group-items {
+    margin-left: 20px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+.list-group.wd-calendar .list-group-item {
+    border: none;
+}
+
+.list-group .list-group-items.active {
+    background-color: whitesmoke;
+}
+
+.list-group .list-group-items.active.wd-links-navigation {
+    color: red;
+}
+
+.list-group.wd-account .list-group-items.active {
+    border-left: 2px;
+    border-left-style: ridge;
+    border-color: black;
+}
+
+.list-group.wd-account .list-group-items.active .wd-links-account {
+    color: black;
+}
+
+.list-group.wd-courses .list-group-items.active {
+    border-left: 2px;
+    border-left-style: ridge;
+    border-color: black;
+}
+
+.list-group.wd-courses .list-group-items.active .wd-links-account {
+    color: black;
+}
+
+.list-group.wd-courses .list-group-items.active.wd-links-courses {
+    color: black;
+}
+
+.list-group.wd-module .list-group-item {
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
+
+.wd-width-module {
+    width: 100%;
+}
+
+.wd-width-overhead {
+    width: 100%;
+}
+
+.wd-size-icon {
+    font-size: xx-large;
+}
+
+.wd-indent-module {
+    padding-left: 50px;
+}
+
+.wd-links-navigation {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.wd-links-navigation-home {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-links-account {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-links-courses {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-links-course-name {
+    color: navy;
+    text-decoration: none;
+}
+
+.wd-links-slides {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-links-course-status {
+    color: black;
+    text-decoration: none;
+}
+
+.wd-links-calendar {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-align-text {
+    text-align: center;
+}
+
+.wd-color-profile-icon {
+    color: white;
+}
+
+.fa.wd-color-profile-icon {
+    color: gray;
+}
+
+.wd-color-navigation-icon {
+    color: red;
+}
+
+.wd-bg-color-navigation {
+    background-color: black;
+}
+
+.wd-color-module-icon {
+    color: green;
+}
+
+.wd-color-bars {
+    background-color: white;
+    color: red;
+}
+
+.wd-color-bars-overhead {
+    color: white;
+}
+
+.wd-color-overhead {
+    background-color: black;
+}
+
+.wd-text-color-overhead {
+    color: white;
+}
+
+.wd-dashboard {
+    margin-left: 20px;
+}
+
+.wd-margin-card {
+    margin-bottom: 40px;
+    margin-right: 120px;
+}
+
+.card.wd-width-card {
+    width: 270px;
+}
+
+.wd-name-student {
+    color: red;
+}
+
+.wd-img-northeastern-logo {
+    background-color: black;
+    border: none;
+}
+
+.wd-width-assignment {
+    width: 100%;
+}
+
+.wd-links-assignments {
+    color: darkslategray;
+    text-decoration: none;
+
+}
+
+.wd-border-module {
+    border-left: 3px;
+    border-left-style: ridge;
+    border-left-color: green;
+}
+
+.wd-font-heading {
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wd-margin-module {
+    margin-top: 30px;
+}
