@@ -1,5 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 import { FaEllipsisV, FaCheckCircle, FaPlus } from 'react-icons/fa';
 
 import db from "../../Database";
@@ -7,12 +14,30 @@ import "../index.css";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules.filter(
-    (module) => module.course === courseId);
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
   return (
     <ul className="list-group wd-module">
+      <li className="list-group-item">
+        <div className="float-end">
+          <button className="btn btn-success mx-1" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+            Add
+          </button>
+          <button className="btn btn-primary mx-1" onClick={() => dispatch(updateModule(module))}>
+            Update
+          </button>
+        </div>
+        <input type="text" class="form-control w-50 my-2" value={module.name}
+          onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
+
+        />
+        <textarea class="form-control w-50 my-2" value={module.description}
+          onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
+        />
+      </li>
       {
-       modules.map((module, index) => (
+       modules.filter((module) => module.course === courseId).map((module, index) => (
          <div className="wd-margin-module">
            <li key={index} className="list-group-item list-group-item-secondary d-flex align-items-center">
               <div className="col-1">
@@ -20,6 +45,14 @@ function ModuleList() {
                   <FaEllipsisV />
               </div>
               <div className="col-10">
+                <button
+                  className="btn btn-success mx-1" onClick={() => dispatch(setModule(module))}>
+                  Edit
+                </button>
+                <button
+                  className="btn btn-danger mx-1" onClick={() => dispatch(deleteModule(module._id))}>
+                  Delete
+                </button>
                 <h3>{module.name}</h3>
                 <p>{module.description}</p>
               </div>
