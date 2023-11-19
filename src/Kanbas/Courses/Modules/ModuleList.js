@@ -11,7 +11,6 @@ import {
 import { FaEllipsisV, FaCheckCircle, FaPlus } from 'react-icons/fa';
 
 import * as client from "./client";
-import { findModulesForCourse, createModule } from "./client";
 import "../index.css";
 
 function ModuleList() {
@@ -20,7 +19,7 @@ function ModuleList() {
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
   const handleAddModule = () => {
-    createModule(courseId, module).then((module) => {
+    client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
     });
   };
@@ -34,7 +33,7 @@ function ModuleList() {
     dispatch(updateModule(module));
   };
   useEffect(() => {
-    findModulesForCourse(courseId)
+    client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
     );
