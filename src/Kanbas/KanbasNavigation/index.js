@@ -25,6 +25,48 @@ function KanbasNavigation() {
                 </li>
               </Link>
               <Link
+                to={`/Kanbas/Signin`}
+                className={`list-group-items ${pathname.includes(`Signin`) && "active" && "wd-links-navigation"}`}>
+                <li className="list-group-items">
+                    <div className="row">
+                        <div className="col">
+                            <FaUser className="wd-color-profile-icon wd-size-icon"/>
+                        </div>
+                        <div className="col d-flex justify-content-center wd-links-navigation-name">
+                            Signin
+                        </div>
+                    </div>
+                </li>
+              </Link>
+              <Link
+                to={`/Kanbas/Signup`}
+                className={`list-group-items ${pathname.includes(`Signup`) && "active" && "wd-links-navigation"}`}>
+                <li className="list-group-items">
+                    <div className="row">
+                        <div className="col">
+                            <FaUser className="wd-color-profile-icon wd-size-icon"/>
+                        </div>
+                        <div className="col d-flex justify-content-center wd-links-navigation-name">
+                            Signup
+                        </div>
+                    </div>
+                </li>
+              </Link>
+              <Link
+                to={`/Kanbas/admin/users`}
+                className={`list-group-items ${pathname.includes(`/admin/users`) && "active" && "wd-links-navigation"}`}>
+                <li className="list-group-items">
+                    <div className="row">
+                        <div className="col">
+                            <FaUser className="wd-color-profile-icon wd-size-icon"/>
+                        </div>
+                        <div className="col d-flex justify-content-center wd-links-navigation-name">
+                            User Table
+                        </div>
+                    </div>
+                </li>
+              </Link>
+              <Link
                 to={`/Kanbas/Dashboard`}
                 className={`list-group-items ${pathname.includes(`Dashboard`) && "active" && "wd-links-navigation"}`}>
                 <li className="list-group-items">
