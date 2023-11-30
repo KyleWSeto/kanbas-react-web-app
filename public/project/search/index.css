@@ -13,29 +13,16 @@
 .proj-bg-img-home {
     background-image: url("../../images/mont-blanc-77877_1280.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-}
-
-.proj-bg-color-for-you {
-    background-color: aquamarine;
-}
-
-.proj-bg-color-trending {
-    background-color: aqua;
-}
-
-.proj-bg-color-highly-rated {
-    background-color: cornflowerblue;
-}
-
-.proj-font-color {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
 }
 
 .proj-heading-font {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.proj-bg-color-search {
+    background-color: royalblue;
 }
 
 .proj-color-outline-nav {
@@ -60,6 +47,11 @@
     color: royalblue;
     --bs-btn-hover-bg: aqua;
     --bs-btn-hover-border-color: royalblue;
+}
+
+.proj-font-btn {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
 }
 
 .proj-heading-card {

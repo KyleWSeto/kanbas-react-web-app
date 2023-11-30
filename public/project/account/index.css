@@ -10,8 +10,17 @@
     height: 1200px;
 }
 
-.proj-heading-font {
+.proj-bg-color-profile {
+    background-color: cornflowerblue;
+}
+
+.proj-bg-color-for-you {
+    background-color: aquamarine;
+}
+
+.proj-heading-profile {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
 }
 
 .proj-font-nav {
@@ -31,25 +40,6 @@
     font-weight: 300;
 }
 
-.proj-label-font {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 300;
-}
-
-.proj-bg-img-register {
-    background-image: url("../../images/wildwood-392754_1280.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.proj-bg-img-login {
-    background-image: url("../../images/facade-insulation-1150330_1280.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .proj-color-outline-nav {
     background-color: royalblue;
 }
@@ -60,4 +50,25 @@
 
 .proj-padding-nav {
     --bs-navbar-padding-y: 0;
+}
+
+.proj-heading-card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.proj-color-card-header {
+    background-color: royalblue;
+}
+
+.proj-color-card-body {
+    background-color: cornflowerblue;
+}
+
+.proj-color-link {
+    color: aquamarine;
+}
+
+.proj-color-fa-star {
+    color: gold;
 }
