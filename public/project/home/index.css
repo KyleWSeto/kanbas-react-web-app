@@ -26,7 +26,7 @@
 }
 
 .proj-bg-color-highly-rated {
-    background-color: cornflowerblue;
+    background-color:violet;
 }
 
 .proj-font-color {
@@ -51,8 +51,8 @@
 }
 
 .proj-font-nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
 }
 
 .proj-color-btn {

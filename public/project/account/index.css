@@ -24,8 +24,8 @@
 }
 
 .proj-font-nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
 }
 
 .proj-color-btn {
@@ -71,4 +71,54 @@
 
 .proj-color-fa-star {
     color: gold;
+}
+
+.proj-bg-color-ul {
+    --bs-list-group-bg: aquamarine;
+    --bs-list-group-border-color: cornflowerblue;
+}
+
+.proj-font-ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.proj-color-btn-follow {
+    background-color: chartreuse;
+    color: darkolivegreen;
+    --bs-btn-hover-bg: darkgreen;
+    --bs-btn-hover-border-color: darkolivegreen;
+}
+
+.proj-color-btn-unfollow {
+    background-color: crimson;
+    color: darkred;
+    --bs-btn-hover-bg: firebrick;
+    --bs-btn-hover-border-color: darkred;
+}
+
+.proj-bg-color-ul {
+    --bs-list-group-bg: aquamarine;
+    --bs-list-group-border-color: cornflowerblue;
+}
+
+.proj-font-ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.proj-bg-color-follow {
+    background-color: violet;
+}
+
+.proj-decoration-link {
+    text-decoration: none;
+}
+
+.proj-color-fa-thumbs-up {
+    color: royalblue;
+}
+
+.proj-color-fa-user-plus {
+    color: navy;
 }
